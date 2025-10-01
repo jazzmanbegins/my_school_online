@@ -1,0 +1,298 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #333;
+}
+
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: rgb(250, 250, 250);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    z-index: 100;
+}
+
+div .logo {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.logo span {
+    font-weight: normal;
+    font-size: 14px;
+    color: rgb(97, 97, 97);
+}
+
+.navbar a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.navbar a.active,
+.navbar a:hover {
+    color: #00aea0;
+}
+
+.btn-buy {
+    background: #00aea0;
+    color: white;
+    padding: 8px 14px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+/* Hero */
+
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* จัดทั้งข้อความและรูปให้อยู่กลาง */
+    gap: 50px; /* ระยะห่างระหว่างข้อความกับรูป */
+    padding: 120px 5% 50px;
+    background: linear-gradient(90deg, #fff, #f9f9f9);
+    max-width: 1200px; /* ไม่ให้กว้างเกินการ์ด 4 ใบ */
+    margin: auto; /* จัดให้อยู่กึ่งกลางหน้า */
+
+}
+
+.hero-text {
+    max-width: 800px;
+}
+
+.hero-image img {
+    max-width: 500px;
+    height: auto;
+}
+
+.hero-text .small-title {
+    color:#00aea0;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.hero-text h1 {
+    font-size: 60px;
+    line-height: 1.3;
+    margin-bottom: 15px;
+}
+
+.hero-text .description {
+    color: gray;
+    margin-bottom: 20px;
+}
+
+.description {
+
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: gray;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+}
+
+
+
+.btn-primary {
+    background: #00aea0;
+    color: white;
+    padding: 10px 18px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.btn-outline {
+    border: 1px solid #ccc;
+    padding: 10px 18px;
+    text-decoration: none;
+    border-radius: 4px;
+    color: #333;
+}
+
+.social{
+    display: flex;
+    gap: 4px;
+    padding: 10px 5px;
+    
+}
+
+.hero-image img {
+    max-width: 600px;
+}
+
+/* Courses Slider */
+
+.courses{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    
+}
+.ourcourses{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+.slider-container {
+    position: relative;
+}
+
+.slider {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 20px;
+    justify-content: center;
+    max-width: 1200px; /* จำกัดพื้นที่สูงสุด */
+    margin: auto; /* จัดกึ่งกลาง */
+}
+
+.course-card {
+    background: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+    text-align: left;
+}
+
+.course-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.thaifont  {
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    
+}
+
+.price{ 
+    font-family: "Kanit", sans-serif;
+    color: #080000;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+
+h3,.logo{
+     color: #00aea0;
+}
+
+.reviews {
+    background-color: #49d4c9; /* สีส้มเหมือนตัวอย่าง */
+    padding: 50px 5% 70px;
+    text-align: center;
+    justify-content: center;
+    max-width: 1200px; /* จำกัดพื้นที่สูงสุด */
+    margin: auto; /* จัดกึ่งกลาง */
+}
+
+.reviews-title {
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.reviews-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.review-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.review-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.review-card h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.review-card .role {
+    color: rgb(78, 78, 78);
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.review-text {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.5;
+}
+
+
+footer{
+    background-color: #333;
+    padding: 20px;
+}
+
+.footertext{
+    text-align: center;
+    color: #f9f9f9;
+}
+
+/* Responsive */
+
+/* จอเล็กให้เรียงลง */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+/* จำกัดให้สูงสุด 4 คอลัมน์ */
+@media (min-width: 1200px) {
+    .slider {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* สำหรับจอเล็กสุด ให้เหลือ 1 การ์ด */
+@media (max-width: 500px) {
+    .slider {
+        grid-template-columns: 1fr;
+    }
+}
+
+.all {
+    align-items: center;
+}
