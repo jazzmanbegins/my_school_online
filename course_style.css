@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #333;
+}
+
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: rgb(250, 250, 250);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    z-index: 100;
+}
+
+div .logo {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.logo span {
+    font-weight: normal;
+    font-size: 14px;
+    color: rgb(97, 97, 97);
+}
+
+.logo {
+    color: #00aea0;
+}
+
+.navbar a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.navbar a.active,
+.navbar a:hover {
+    color: #00aea0;
+}
+
+.btn-buy {
+    background: #00aea0;
+    color: white;
+    padding: 8px 14px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* จัดทั้งข้อความและรูปให้อยู่กลาง */
+    max-width: 1200px; /* ไม่ให้กว้างเกินการ์ด 4 ใบ */
+    margin: auto; /* จัดให้อยู่กึ่งกลางหน้า */
+
+}
+
+.hero-image img {
+    max-width: 1200px;
+    height: auto;
+}
+
+/* Courses*/
+
+.courses{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.ourcourses{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+.slider-container {
+    position: relative;
+}
+
+.slider {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 20px;
+    justify-content: center;
+    max-width: 1200px; /* จำกัดพื้นที่สูงสุด */
+    margin: auto; /* จัดกึ่งกลาง */
+}
+
+.course-card {
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+    text-align: left;
+}
+
+.course-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.thaifont  {
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    
+}
+
+.price{ 
+    font-family: "Kanit", sans-serif;
+    color: #080000;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+h3{
+     color: #00aea0;
+}
+
+footer{
+    background-color: #333;
+    
+    padding: 20px;
+}
+
+.footertext{
+    text-align: center;
+    color: #f9f9f9;
+}
+
+/* Responsive */
+
+/* จอเล็กให้เรียงลง */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+/* จำกัดให้สูงสุด 4 คอลัมน์ */
+@media (min-width: 1200px) {
+    .slider {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* สำหรับจอเล็กสุด ให้เหลือ 1 การ์ด */
+@media (max-width: 500px) {
+    .slider {
+        grid-template-columns: 1fr;
+    }
+}
+
+.all {
+    align-items: center;
+}
